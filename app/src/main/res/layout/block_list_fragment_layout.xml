@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_16">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/margin_48"
+        android:layout_height="@dimen/margin_48"
+        android:layout_marginTop="@dimen/margin_16"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/logo_title"
+        style="@style/AppLogoGrey18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/app_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/explore_your_suite"
+        style="@style/TextStyleH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_48"
+        android:gravity="center"
+        android:text="@string/explore_your_suite_install_napps_and_more" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/abiable_products"
+        style="@style/TextStyleH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:gravity="center"
+        android:text="@string/abiable_products" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/explore_security_suite"
+        style="@style/TextStyleBody2.Gray1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/explore_the_total_security_suite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBlocked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_24"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_host_block" />
+</LinearLayout>

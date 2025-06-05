@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nexora_red">#DA022A</color>
+    <color name="nexora_grey">#9F9D9D</color>
+
+    <color name="logo_second_color">#0E090A</color>
+    <color name="black">#0E090A</color>
+    <color name="gray_2">#DFDFDF</color>
+    <color name="gray_1">#9F9D9D</color>
+    <color name="gray_3">#F4F3F3</color>
+    <color name="gray_4">#FAFAFA</color>
+    <color name="red">#DA022A</color>
+    <color name="red_2">#F91E46</color>
+    <color name="pink">#FBE6EA</color>
+    <color name="pink_2">#B3FBE6EA</color>
+    <color name="green">#34C759</color>
+    <color name="gray">#808080</color>
+</resources>

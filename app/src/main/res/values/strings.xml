@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">AVLIX</string>
+    <string name="welcome_to_avlyx">Welcome to AVLIX</string>
+    <string name="email_address">Enter you email</string>
+    <string name="password">Password</string>
+
+    <!--Buttons-->
+    <string name="button_exit">Exit</string>
+    <string name="button_close">Close</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_add">Add</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
+    <string name="button_help">Help</string>
+
+    <!--Home-->
+    <string name="header_help">Welcome!</string>
+    <string name="text_help">AdAway is a free and open-source software design to block advertising. It fetches advertising network addresses to block them on your device.\nWant to know more? Check the help below!</string>
+    <string name="button_show_help">Show more help</string>
+    <string name="icon_update_status">Update status</string>
+    <string name="text_update">All hosts files from the defined sources are downloaded, merged with your own lists and installed as one hosts file on your system.</string>
+    <string name="button_enable_hosts">Enable ad-blocking</string>
+    <string name="button_disable_hosts">Disable ad-blocking</string>
+    <string name="header_webserver">Web server</string>
+    <string name="webserver_status_running">Running</string>
+    <string name="webserver_status_stopped">Stopped</string>
+    <string name="webserver_toggle_text">Start or stop webserver on localhost to answer requests to blocked hostnames.</string>
+    <string name="button_enable_webserver">Enable web server</string>
+    <string name="button_disable_webserver">Disable web server</string>
+    <string name="header_vpn">VPN</string>
+    <string name="vpn_status_running">Running</string>
+    <string name="vpn_status_stopped">Stopped</string>
+    <string name="vpn_toggle_text">Start or stop VPN to filter requests.</string>
+    <string name="button_enable_vpn">Enable VPN</string>
+    <string name="button_disable_vpn">Disable VPN</string>
+
+    <!--Checkbox List-->
+    <string name="checkbox_list_context_title">Edit Entry</string>
+    <string name="checkbox_list_context_apply">Apply</string>
+    <string name="checkbox_list_context_edit">Edit</string>
+    <string name="checkbox_list_context_delete">Delete</string>
+
+    <!--Your lists-->
+    <string name="import_dialog">Importing…</string>
+    <string name="import_success">Backup successfully imported from your external storage.</string>
+    <string name="import_failed">Failed to import backup. Is its format correct? Check logcat for more details.</string>
+    <string name="export_dialog">Exporting…</string>
+    <string name="export_success">Backup successfully exported to file \'%s\' on your external storage.</string>
+    <string name="export_failed">Failed to export backup file \'%s\'.</string>
+
+    <!--Hosts content-->
+    <string name="hosts_header">The hosts file</string>
+    <string name="hosts_description">The hosts file is a system file that maps hostnames to IP addresses. It is a plain text file which configuration is handled by AdAway. Here are its few first lines:</string>
+    <string name="hosts_content">Loading the hosts file content…</string>
+    <string name="hosts_open_button">Open the hosts file</string>
+
+    <!--Status Notification-->
+    <string name="status_check">Checking for update</string>
+    <string name="status_check_source">Checking %s source for update</string>
+    <string name="status_retrieve">Retrieving sources</string>
+    <string name="status_download_source">Downloading source %s</string>
+    <string name="status_read_source">Reading source %s</string>
+    <string name="status_parse_source">Parsing %s source</string>
+    <string name="status_sync_database">Syncing rule database</string>
+    <string name="status_revert">Reverting to default hosts file</string>
+    <string name="status_revert_done">Default hosts file restored</string>
+    <string name="status_reverting_subtitle">Creating standard hosts file</string>
+    <string name="status_update_available">Source update available</string>
+    <string name="status_update_available_subtitle">Newer hosts files available</string>
+    <string name="status_no_update_found">No source update found</string>
+    <string name="status_no_connection">No Internet connection</string>
+    <string name="status_no_connection_subtitle">No Internet connection available</string>
+    <string name="status_download_fail">Unavailable sources</string>
+    <string name="status_download_fail_subtitle_new">No hosts sources are reachable!</string>
+    <string name="status_root_access_denied">Root access denied</string>
+    <string name="status_root_access_denied_subtitle">Allow root access from your root app</string>
+    <string name="status_failure">Something went wrong</string>
+    <string name="status_failure_subtitle">Check the logcat for more details</string>
+    <string name="status_enabled">Enabled</string>
+    <string name="status_enabled_subtitle">Newest hosts files enabled</string>
+    <string name="status_disabled">Disabled</string>
+    <string name="status_disabled_subtitle">Default hosts file installed</string>
+    <string name="status_apply_sources">Apply latest sources</string>
+    <string name="status_create_new_hosts">Creating a new hosts file</string>
+    <string name="status_copy_new_hosts">Copying a new hosts file</string>
+    <string name="status_check_copy">Checking hosts file copy</string>
+    <string name="status_hosts_updated">Hosts file successfully updated</string>
+    <string name="status_vpn_configuration_updated">VPN configuration successfully updated</string>
+    <string name="notification_configuration_changed">Your configuration changed. You need to apply it.</string>
+    <string name="notification_configuration_changed_action">Apply</string>
+    <string name="notification_configuration_installing">Applying new configuration…</string>
+    <string name="notification_configuration_failed">Failed to apply new configuration.</string>
+
+    <!--Apply and Revert Dialogs-->
+    <string name="apply_symlink_missing_status">The symlink to the hosts file target is missing</string>
+    <string name="apply_symlink_missing">Symlink from your target to /system/etc/hosts is not existing or incorrect! AdAway will not work if it is not pointing to the right file.\n\nDo you want to try creating a symlink?</string>
+    <string name="apply_symlink_missing_title">Symlink missing</string>
+    <string name="apply_not_enough_space">Not enough space on the partition!\nTry changing the target hosts file in preferences to /data/data/hosts.</string>
+    <string name="apply_not_enough_space_title">Not enough space</string>
+    <string name="apply_private_file_fail">Downloaded file could not be read.</string>
+    <string name="apply_private_file_fail_title">Private file fail</string>
+    <string name="apply_remount_fail">Remounting the partition as read/write failed!</string>
+    <string name="apply_remount_fail_title">Remount failed</string>
+    <string name="apply_copy_fail_status">Failed to copy hosts file</string>
+    <string name="apply_copy_fail">Copying of hosts file failed!</string>
+    <string name="apply_copy_fail_title">Copy failed</string>
+    <string name="apply_success_subtitle">Applied hosts sources</string>
+    <string name="apply_success_title">Applying successful</string>
+    <string name="apply_success_dialog">Applying was successful.\nIt may be necessary to reboot Android for the changes to take effect.\n\nDo you want to reboot?\n(To prevent data loss make sure no app uses the SD card at the moment!)</string>
+    <string name="apply_symlink_successful">Symlink was created successful.\nIt may be necessary to reboot Android for the changes to take effect.\n\nDo you want to reboot?\n(To prevent data loss make sure no app uses the SD card at the moment!)</string>
+    <string name="apply_symlink_successful_title">Symlink creation successful</string>
+    <string name="apply_symlink_fail">Symlink could not be created by Android.\nThis fails mostly due to a \'feature\' called S-ON on HTC phones!\n\nA solution is to boot your phone into recovery mode and create the symlink there with \'ln -s /data/data/hosts /system/etc/hosts\'.\n\nIf this does not work search the Internet for S-OFF and your phone.</string>
+    <string name="apply_symlink_fail_title">Symlink creation failed</string>
+    <string name="apply_help">Please read Help for more information.</string>
+    <string name="apply_apn_proxy">An APN proxy is set on your Android!\nAdAway will not work reliably when on Mobile Networks like 3G. You can deactivate that proxy by going to your selected APN (From the Settings app: Network &amp; Internet -> Mobile network -> Advanced -> Access Point Names) and remove the value in the proxy field.</string>
+    <string name="apply_apn_proxy_title">APN proxy set!</string>
+    <string name="no_connection">The connection to the Internet is not working.</string>
+    <string name="no_connection_title">No Connection</string>
+    <string name="download_dialog">Downloading…</string>
+    <string name="apply_dialog">Applying…</string>
+    <string name="apply_dialog_lists">Applying Blacklist and Whitelist</string>
+    <string name="apply_dialog_hostnames">Parsing and merging hosts files</string>
+    <string name="apply_dialog_hosts">Building hosts file</string>
+    <string name="apply_dialog_apply">Applying hosts file</string>
+    <string name="apply_fail_status">Failed to apply new hosts file.</string>
+    <string name="apply_fail">Applying the hosts file to your system failed!\nTry changing the target hosts file in preferences to /data/data/hosts.</string>
+    <string name="apply_fail_title">Applying failed</string>
+    <string name="root_access_fail">Please check your root management app to ensure root access has been granted.</string>
+    <string name="revert_successful">You reverted to the default hosts file.\nIt may be necessary to reboot Android for the changes to take effect.\n\nDo you want to reboot?\n(To prevent data loss make sure no app uses the SD card at the moment!) </string>
+    <string name="revert_successful_title">Reverting successful</string>
+    <string name="revert_failed_status">Unable to revert hosts file</string>
+    <string name="revert_problem">Reverting failed due to unknown reasons.</string>
+    <string name="revert_problem_title">Reverting failed!</string>
+    <string name="download_fail_dialog">None of your enabled hosts sources are reachable! Are you properly connected to the Internet?</string>
+    <string name="download_fail_title">Download failed</string>
+    <string name="no_private_file_status">Failed to write new private hosts file</string>
+    <string name="no_private_file">Private file can not be created.</string>
+    <string name="no_private_file_title">Private file creation failed</string>
+    <string name="enable_systemless_successful">You enabled systemless mode.\nIt may be necessary to reboot Android for the changes to take effect.\n\nDo you want to reboot?\n(To prevent data loss make sure no app uses the SD card at the moment!)</string>
+    <string name="enable_systemless_successful_title">Enabling successful</string>
+    <string name="disable_systemless_successful">You disabled systemless mode.\nIt may be necessary to reboot Android for the changes to take effect.\n\nDo you want to reboot?\n(To prevent data loss make sure no app uses the SD card at the moment!)</string>
+    <string name="disable_systemless_successful_title">Disabling successful</string>
+    <string name="enable_vpn_fail">Failed to enable VPN ad blocking.</string>
+    <string name="disable_vpn_fail">Failed to disable VPN ad blocking.</string>
+    <string name="enable_systemless_magisk_title">Enabling hosts Magisk module</string>
+    <string name="enable_systemless_magisk">Enable systemless hosts feature from Magisk manager. From its settings, enable the <cite>Systemless hosts</cite> option then reboot your device.</string>
+    <string name="disable_systemless_magisk_title">Disabling hosts Magisk module</string>
+    <string name="disable_systemless_magisk">Disable systemless hosts feature from Magisk manager. From the module list, uninstall the <cite>Systemless hosts</cite> module then reboot your device.</string>
+
+    <!--Other Dialogs-->
+    <string name="hosts_add_dialog">Input URL to hosts file:</string>
+    <string name="no_hostname">This is not a valid hostname!</string>
+    <string name="no_hostname_title">Improperly formatted hostname</string>
+    <string name="no_ip">This is not a valid IP!</string>
+    <string name="no_ip_title">Improperly formatted IP</string>
+    <string name="reboot_never_reboot">Never reboot and don\'t show this question next time!</string>
+    <string name="loading">Loading…</string>
+
+    <!--Menu entries-->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_import">Import backup</string>
+    <string name="menu_export">Export backup</string>
+
+    <!--Help-->
+    <string name="help_tab_s_on_s_off">S-ON/S-OFF</string>
+    <string name="help_tab_faq">FAQ</string>
+    <string name="help_tab_problems">Problems</string>
+
+    <!--Adware-->
+    <string name="adware_header">Adware</string>
+    <string name="adware_description">Here you can find installed adware, bad applications which can\'t be blocked by AdAway. These apps use for example Airpush notifications that pop up even when the app is not running or even change your ringtone. The only available countermeasure is to uninstall those apps by clicking on the list items.</string>
+    <string name="adware_scanning">Scanning…</string>
+    <string name="adware_empty">No Adware were found!</string>
+
+    <!--Other-->
+    <string name="app_subtitle">Ad blocker</string>
+    <string name="no_text_editor_title">No text editor installed</string>
+    <string name="no_text_editor">No text editor could be found to open the hosts file. You can install Jota or other text editors to handle this.\n\nDo you want to install Jota?</string>
+    <string name="no_file_manager_title">No file manager installed</string>
+    <string name="no_file_manager">No file manager could be found to open files. You can install OI File Manager or other file managers to handle this.\n\nDo you want to install OI File Manager?</string>
+
+    <!--Tcpdump-->
+    <string name="tcpdump_header">Tcpdump</string>
+    <string name="tcpdump_description">Tcpdump is a tool to monitor DNS requests and save them in a log file. You can start it in the background, run applications that display ads, and afterwards analyze the DNS requests using the log file. Possible ad server can then be added to your blacklist.</string>
+    <string name="tcpdump_disable_monitoring">Disable monitoring</string>
+    <string name="tcpdump_enable_monitoring">Enable monitoring</string>
+    <string name="tcpdump_show_results">Show results</string>
+    <string name="tcpdump_menu_sort">Sort domains</string>
+    <string name="tcpdump_menu_clear">Clear log</string>
+    <string name="tcpdump_entry_add_blacklist">Add entry to black list</string>
+    <string name="tcpdump_entry_add_whitelist">Add entry to white list</string>
+    <string name="tcpdump_entry_add_redirection_list">Add entry to redirect list</string>
+
+    <string name="pref_edit_text_value">Edit text preference value</string>
+    <string name="drawer_open">Open menu</string>
+    <string name="drawer_close">Close menu</string>
+
+    <!-- !!! Attention, always translate all items from this array !!! - Drawer menu items -->
+    <string-array name="drawer_items">
+        <item>Home</item>
+        <item>Hosts sources</item>
+        <item>Your lists</item>
+        <item>Open hosts file</item>
+        <item>Log DNS requests</item>
+        <item>Scan for adware</item>
+        <item>Preferences</item>
+        <item>Help</item>
+    </string-array>
+    <!--Drawer menu labels-->
+
+    <!--Shortcuts-->
+    <string name="shortcut_dns_requests">DNS requests</string>
+    <string name="shortcut_your_lists">Your lists</string>
+    <string name="shortcut_preferences">Preferences</string>
+
+    <!--Hosts source status-->
+    <string name="hosts_source_installed">Installed %1$s ago</string>
+    <string name="hosts_source_up_to_date">Up-to-date for %1$s</string>
+    <string name="hosts_source_need_update">Need update for %1$s</string>
+    <string name="hosts_source_last_update">Last update %1$s ago</string>
+    <string name="hosts_source_unknown_status">Unknown update status</string>
+    <string name="hosts_source_disabled">Disabled</string>
+    <string name="hosts_source_few_minutes">few minutes</string>
+    <plurals name="hosts_source_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="hosts_source_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="hosts_source_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="hosts_source_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+
+    <!-- Clipboard -->
+    <string name="clipboard_host_copied">Host copied to clipboard</string>
+
+    <!--VPN notification-->
+    <string name="vpn_notification_starting">starting</string>
+    <string name="vpn_notification_running">active</string>
+    <string name="vpn_notification_stopping">stopping</string>
+    <string name="vpn_notification_waiting_for_net">wait for network</string>
+    <string name="vpn_notification_reconnecting">reconnecting</string>
+    <string name="vpn_notification_reconnecting_error">reconnecting error</string>
+    <string name="vpn_notification_paused">paused</string>
+    <string name="vpn_notification_stopped">stopped</string>
+    <string name="vpn_notification_title">Ad-blocker VPN %1$s</string>
+    <string name="vpn_notification_action_pause">Pause</string>
+    <string name="vpn_notification_action_resume">Resume</string>
+
+    <!-- Permission -->
+    <string name="permission_group_api_label">AdAway permissions</string>
+    <string name="permission_group_api_description">Allow to interact with AdAway</string>
+    <string name="permission_send_command_label">Send commands to AdAway</string>
+    <string name="permission_send_command_description">Allow to send commands to AdAway like enabling or disabling the system-wide ad-blocking</string>
+
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="get_started">Get started</string>
+    <string name="by_logging_in_you_agree_to_our_eula_and_privacy_policy">By logging in you agree to our EULA and Privacy Policy</string>
+    <string name="eula">EULA</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgotten_password">Forgotten password?</string>
+    <string name="recover_password">Recover password</string>
+    <string name="you_already_have_an_account">You already have an account?</string>
+    <string name="invalid_email">Invalid Email!</string>
+    <string name="invalid_code">Invalid Code!</string>
+    <string name="invalid_password">Incorrect Password!</string>
+    <string name="password_validator_error">Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number.</string>
+    <string name="enter_your_email_to_reset_it">Enter your email to reset it</string>
+
+    <!--    Onboarding   -->
+    <string name="onboarding_title_1">Block out stimuli</string>
+    <string name="onboarding_descriptor_1">100% protection</string>
+    <string name="onboarding_description_1">AVLIX can filter any type of content, and you can customize the filtering to suit your needs.</string>
+    <string name="onboarding_descriptor_2">100% protection</string>
+    <string name="onboarding_title_2">Block out stimuli</string>
+    <string name="onboarding_description_2">AVLIX can filter any type of content, and you can customize the filtering to suit your needs.</string>
+    <string name="skip">skip</string>
+    <string name="protection_is_active">Protection is active</string>
+    <string name="protection_is_disabled">Protection is disabled</string>
+    <string name="need_help">Need Help?</string>
+    <string name="see_step_by_step_setup_instructions">See step by step setup instructions</string>
+    <string name="anti_tracking">Anti Tracking</string>
+    <string name="block_invisible_trackers">Block invisible trackers</string>
+    <string name="enhance_your_protection">Enhance Your Protection</string>
+    <string name="malware_protection">Malware Protection</string>
+    <string name="block_malicius_ads">Block malicius ads</string>
+    <string name="block_tracking_cookies">Block consent banners</string>
+    <string name="cookie_protection">Hide Cookie Promts</string>
+    <string name="google_protecrion">Google Protecrion</string>
+    <string name="block_browser_ads">Block browser ads</string>
+    <string name="block_video_ads">Block video ads</string>
+    <string name="youtube_protection">YouTube Protection</string>
+    <string name="blocked_ads">Blocked: %d ads</string>
+    <string name="speed">Speed</string>
+    <string name="turbo_charge_loading_speeds">Turbo charge loading speeds</string>
+    <string name="privacy">Privacy</string>
+    <string name="prevent_tracking_online">Prevent tracking online</string>
+    <string name="security">Security</string>
+    <string name="malware_scam_site_protection"><![CDATA[Malware & scam site protection]]></string>
+    <string name="social_media_widgets">Social Media Widgets</string>
+    <string name="block_social_media_tracking">Block social media tracking</string>
+    <string name="annoyances">Annoyances</string>
+    <string name="presets">Presets</string>
+    <string name="you_don_t_have_all_types_of_protection_enabled">you don\'t have all types\n of protection enabled</string>
+    <string name="turn_on_all">turn on all</string>
+    <string name="vpn">VPN</string>
+    <string name="explore_your_suite_install_napps_and_more">Explore your suite, install\napps and more!</string>
+    <string name="abiable_products">Abiable Products</string>
+    <string name="explore_the_total_security_suite">Explore the Total Security Suite</string>
+    <string name="settings">Settings</string>
+    <string name="premium_active">Premium Active</string>
+    <string name="your_subscription_is_active_and_you_protection_is_enabled">Your subscription is active and you protection is enabled.</string>
+    <string name="paid_until_s">Paid until %s</string>
+    <string name="change_account_detail">Change Account Detail</string>
+    <string name="ad_blocking_setting">Ad blocking setting</string>
+    <string name="see_all">See all</string>
+    <string name="let_s_create_an_account_to_use_nexora_on_all_your_devices">Let’s create an account to use Nexora on all your devices</string>
+    <string name="choose_a_password">Choose a Password</string>
+    <string name="save_continue"><![CDATA[Save & Continue]]></string>
+    <string name="by_updating_your_account_details_you_agree_to_our_eula_and_privacy_policy">By updating your account details you agree to our EULA and Privacy Policy</string>
+    <string name="all_your">all your</string>
+    <string name="passwords_do_not_match">Passwords don\'t match!</string>
+    <string name="white_list">White List</string>
+    <string name="ad_blocking_not_working">Ad-blocking not working?</string>
+    <string name="app_version">App Version</string>
+    <string name="log_out">Log out</string>
+    <string name="check_your_email">Check your email</string>
+    <string name="enter_code">Enter code</string>
+    <string name="email">email</string>
+    <string name="and_enter_the_one_time_code_from_there">And enter the one-time code from there</string>
+    <string name="resend_code">Resend code</string>
+    <string name="search_hint">Search</string>
+    <string name="total_adblock_will_not_block_ads_on_websites_listed_here">Total Adblock will not block ads on websites listed here</string>
+    <string name="tap_add_website_above_to_add_one">Tap “Add website” above to add one</string>
+    <string name="are_you_sure_you_want_to_delete_the_site">Are you sure you want to delete the site?</string>
+    <string name="it_cannot_be_returned_or_restored">it cannot be returned or restored</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="legal_help"><![CDATA[Legal & Help]]></string>
+    <string name="easy_setup">Easy setup</string>
+    <string name="activate_adblock_avlyx">Activate Adblock AVLIX</string>
+    <string name="close_the_application">close the application</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="get_permissions">Get permissions</string>
+    <string name="open_the_settings_app_on_your_phone">Open the settings app on your phone</string>
+    <string name="open_google_browser_and_find_n_extensions">Open Google browser and find\n extensions</string>
+    <string name="turn_on_adblock_avlyx">Turn on Adblock AVLIX</string>
+</resources>

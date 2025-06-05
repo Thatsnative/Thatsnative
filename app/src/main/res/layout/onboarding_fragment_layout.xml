@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_16">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onboardingPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.example.epic.common.customViews.ViewPagerIndicator2
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        app:layout_constraintBottom_toTopOf="@id/skip_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/skip_button"
+        style="@style/BaseEpicButton"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:text="@string/skip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

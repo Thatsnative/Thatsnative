@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="@dimen/margin_68"
+    android:background="@drawable/dialog_background_gray_4_corner_14"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_20">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextStyleH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_16"
+        android:text="@string/are_you_sure_you_want_to_delete_the_site"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/TextStyleBody3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2"
+        android:paddingHorizontal="@dimen/margin_16"
+        android:text="@string/it_cannot_be_returned_or_restored"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_1"
+        android:layout_marginTop="@dimen/space_23"
+        android:background="@color/gray_2" />
+
+    <TextView
+        android:id="@+id/accept_button"
+        style="@style/TextStyleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_16"
+        android:text="@string/yes"
+        android:textAlignment="center" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/gray_2" />
+
+    <TextView
+        android:id="@+id/cancel_button"
+        style="@style/TextStyleButton.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_12"
+        android:paddingBottom="@dimen/margin_16"
+        android:text="@string/cancel"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

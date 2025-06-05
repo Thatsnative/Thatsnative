@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filter_item_background_corner_16"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:maxWidth="@dimen/turn_all_dialog_width"
+    android:maxHeight="@dimen/margin_72"
+    android:orientation="vertical"
+    android:elevation="@dimen/margin_4"
+    android:paddingHorizontal="@dimen/margin_12"
+    android:paddingVertical="@dimen/margin_8"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/TextStyleBody3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_don_t_have_all_types_of_protection_enabled" />
+
+    <TextView
+        android:id="@+id/turn_button"
+        style="@style/TextStyleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:text="@string/turn_on_all" />
+
+</LinearLayout>

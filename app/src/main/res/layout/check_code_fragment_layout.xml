@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_16">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/margin_48"
+        android:layout_height="@dimen/margin_48"
+        android:layout_marginTop="@dimen/margin_16"
+        android:src="@drawable/logo" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/logo_title"
+        style="@style/AppLogoGrey18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/app_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcome_text"
+        style="@style/TextStyleH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_48"
+        android:text="@string/check_your_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/welcome_description"
+        style="@style/TextStyleBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/and_enter_the_one_time_code_from_there"
+        android:textColor="@color/gray_1" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/code"
+        style="@style/BaseEpicEditTextWithSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:drawablePadding="@dimen/margin_16"
+        android:hint="@string/enter_code"
+        android:inputType="textEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/code_error"
+        style="@style/TextStyleBody3.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_4"
+        android:text="@string/invalid_code"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timerText"
+        style="@style/TextStyleBody2.Gray1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        tools:text="Resend code in 60s" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resendCodeButton"
+        style="@style/TextStyleBody2.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_4"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/resend_code" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_button"
+        style="@style/BaseEpicButton"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24"
+        android:gravity="center"
+        android:text="@string/log_in" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/eula_and_policy"
+            style="@style/TextStyleBody3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/margin_32"
+            android:text="@string/by_logging_in_you_agree_to_our_eula_and_privacy_policy" />
+    </FrameLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:src="@drawable/ic_arrow_left_40" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextStyleH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="White List" />
+
+    <TextView
+        android:id="@+id/right_button"
+        style="@style/TextStyleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:drawableStart="@drawable/ic_add_40"
+        android:gravity="center"
+        android:text="@string/done" />
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarThumbVertical="@null"
+    android:paddingHorizontal="@dimen/margin_14">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/titleSettings"
+            style="@style/TextStyleH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_23"
+            android:gravity="center_horizontal"
+            android:text="@string/settings" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/accInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@drawable/gray_4_shape_corner_16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="@id/titleSettings"
+            app:layout_constraintTop_toBottomOf="@id/titleSettings">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/accountImage"
+                android:layout_width="@dimen/space_90"
+                android:layout_height="@dimen/space_90"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                app:srcCompat="@drawable/acc_image" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/accountName"
+                style="@style/TextStyleH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:text="@string/premium_active"
+                app:layout_constraintBottom_toTopOf="@id/tvAccountDescription"
+                app:layout_constraintStart_toEndOf="@id/accountImage"
+                app:layout_constraintTop_toTopOf="@id/accountImage" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccountDescription"
+                style="@style/TextStyleBody3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/space_4"
+                android:text="@string/your_subscription_is_active_and_you_protection_is_enabled"
+                android:textColor="@color/gray_1"
+                app:layout_constraintBottom_toTopOf="@id/tvPaidDate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/accountName"
+                app:layout_constraintTop_toBottomOf="@id/accountName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPaidDate"
+                style="@style/TextStyleBody3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                android:background="@drawable/paid_green_state_bg"
+                android:paddingHorizontal="@dimen/space_8"
+                android:paddingVertical="@dimen/space_4"
+                android:text="@string/paid_until_s"
+                android:textColor="@color/green"
+                app:layout_constraintBottom_toBottomOf="@id/accountImage"
+                app:layout_constraintStart_toStartOf="@id/accountName"
+                app:layout_constraintTop_toBottomOf="@id/tvAccountDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ad_blocking_title"
+            style="@style/TextStyleH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/ad_blocking_setting" />
+
+        <include
+            android:id="@+id/whiteListSettings"
+            layout="@layout/white_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/legal_and_help_title"
+            style="@style/TextStyleH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/legal_help" />
+
+        <include
+            android:id="@+id/adNotWorking"
+            layout="@layout/item_settings_without_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24" />
+
+        <include
+            android:id="@+id/eula"
+            layout="@layout/item_settings_without_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/privacyPolicy"
+            layout="@layout/item_settings_without_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <include
+            android:id="@+id/appVersion"
+            layout="@layout/settings_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/logOutButton"
+            style="@style/BaseEpicButton"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:text="@string/log_out" />
+    </LinearLayout>
+
+</ScrollView>

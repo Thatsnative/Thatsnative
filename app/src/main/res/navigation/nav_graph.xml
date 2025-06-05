@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tabFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.epic.ui.authorization.AuthFragment"
+        android:label="AuthFragment"
+        tools:layout="@layout/auth_fragment_layout">
+        <action
+            android:id="@+id/action_authFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_authFragment_to_tabFragment"
+            app:destination="@id/tabFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_authFragment_to_checkCodeFragment"
+            app:destination="@id/checkCodeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.epic.ui.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/onboarding_fragment_layout">
+        <action
+            android:id="@+id/action_onboardingFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tabFragment"
+        android:name="com.example.epic.ui.tabFragment.TabFragment"
+        android:label="TabFragment"
+        tools:layout="@layout/tab_fragment_layout">
+        <action
+            android:id="@+id/action_tabFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_tabFragment_to_whiteListFragment"
+            app:destination="@id/whiteListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_tabFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_tabFragment_to_helpFragment"
+            app:destination="@id/helpFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkCodeFragment"
+        android:name="com.example.epic.ui.authorization.CheckCodeFragment"
+        android:label="CheckCodeFragment">
+        <action
+            android:id="@+id/action_checkCodeFragment_to_tabFragment"
+            app:destination="@id/tabFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <argument
+            android:name="email"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/whiteListFragment"
+        android:name="com.example.epic.ui.whiteList.WhiteListFragment"
+        android:label="WhiteListFragment"
+        tools:layout="@layout/white_list_fragment_layout" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.epic.ui.help.HelpFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/help_fragment_layout" />
+
+</navigation>

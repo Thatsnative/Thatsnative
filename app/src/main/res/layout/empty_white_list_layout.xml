@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/search_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/white_list_search_image" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextStyleH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_48"
+        android:layout_marginTop="@dimen/margin_32"
+        android:text="@string/total_adblock_will_not_block_ads_on_websites_listed_here"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/note"
+        style="@style/TextStyleBody2.Gray1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_48"
+        android:layout_marginTop="@dimen/margin_16"
+        android:maxLines="1"
+        android:text="@string/tap_add_website_above_to_add_one"
+        android:textAlignment="center" />
+</LinearLayout>

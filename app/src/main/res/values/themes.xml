@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.EPIC" parent="Theme.AppCompat.DayNight.NoActionBar" />
+
+    <style name="BaseEpicEditTextWithSelector" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/base_edit_text_selector_background_corner_16</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:paddingTop">@dimen/margin_21</item>
+        <item name="android:paddingBottom">@dimen/margin_21</item>
+        <item name="android:paddingEnd">@dimen/margin_16</item>
+        <item name="android:paddingStart">@dimen/margin_16</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="BaseEpicButton">
+        <item name="android:background">@drawable/base_button_background_corner_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/margin_20</item>
+        <item name="android:paddingBottom">@dimen/margin_20</item>
+    </style>
+
+    <style name="BaseEpicButtonPink">
+        <item name="android:background">@drawable/base_pink_button_background_corner_16</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/mulish_regular</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/margin_20</item>
+        <item name="android:paddingBottom">@dimen/margin_20</item>
+    </style>
+</resources>

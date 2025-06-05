@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_16"
+        android:paddingBottom="@dimen/margin_24">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/turn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/vpn_off" />
+
+        <include
+            android:id="@+id/all_protection_dialog"
+            layout="@layout/all_protections_on_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/help_button"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/help_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:src="@drawable/ic_help_circle_24"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/protection_state"
+            app:layout_constraintStart_toEndOf="@id/protection_state"
+            app:layout_constraintTop_toTopOf="@id/protection_state" />
+
+        <TextView
+            android:id="@+id/protection_state"
+            style="@style/TextStyleH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/protection_is_disabled"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/turn_button" />
+
+        <TextView
+            android:id="@+id/ad_block_count"
+            style="@style/TextStyleBody2.Gray1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/blocked_ads"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/protection_state" />
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginTop="@dimen/margin_24"
+            android:background="@color/gray_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ad_block_count" />
+
+        <include
+            android:id="@+id/need_help"
+            layout="@layout/filter_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spacer" />
+
+        <include
+            android:id="@+id/presets"
+            layout="@layout/main_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/need_help" />
+
+        <include
+            android:id="@+id/annoyances"
+            layout="@layout/main_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/presets" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="@dimen/margin_zero"
+            android:layout_height="@dimen/margin_zero"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
